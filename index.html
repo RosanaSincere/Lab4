@@ -15,7 +15,7 @@
 			<form action= "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
 				<fieldset>
 				
-				<legend>My Info</legend>
+			<legend>My Info</legend>
 				<p><label>First name:
 					<input type="text" name="first_name_field"></label></p>
 				<p><label>Last name:
@@ -25,41 +25,42 @@
 				<p><label>Email Address: </label>
 					<input type="text" name="email_field"></p>
 				
-				<p><label>Gender: </label>
+			<div><label>Gender: </label>
 				<input type="radio" name="gender_field" value="Male"> <label>Male</label>
-					<input type="radio" name="gender_field" value="Female"> <label>Female</label></p>
+				<input type="radio" name="gender_field" value="Female"> <label>Female</label></div>
 				
-				<p><label>Age:</label>
-					<select name="age_field"> 
-					<option value="minor">Under 18</option>
-					<option value="18 - 24">18 - 24</option>
-					<option value="25 - 34">25 - 34</option>
-					<option value="35 - 44">35 - 44</option>
-					<option value="45 - 54">45 - 54</option>
-					<option value="55 - 64">55 - 64</option>
-					<option value="65+">65 and over</option>
-					</select></p>
+			<p><label>Age:</label>
+				<select name="age_field"> 
+				<option value="minor">Under 18</option>
+				<option value="18 - 24">18 - 24</option>
+				<option value="25 - 34">25 - 34</option>
+				<option value="35 - 44">35 - 44</option>
+				<option value="45 - 54">45 - 54</option>
+				<option value="55 - 64">55 - 64</option>
+				<option value="65+">65 and over</option>
+			</select></p>
 				
-				</fieldset>	
+			</fieldset>	
 				
-				<fieldset>
-					<legend>My Availability</legend>
-					<p><label>Days Available:</label></p>
-					<p><input type="checkbox" name="availability_field" value="Sunday" > <label>Sunday</label></p>					
-					<p><input type="checkbox" name="availability_field" value="Monday"> <label>Monday</label></p>
-					<p><input type="checkbox" name="availability_field" value="Tuesday"> <label>Tuesday</label></p>
-					<p><input type="checkbox" name="availability_field" value="Wednesday"> <label>Wednesday</label></p>
-					<p><input type="checkbox" name="availability_field" value="Thursday"> <label>Thursday</label></p>
-					<p><input type="checkbox" name="availability_field" value="Friday"> <label>Friday</label></p>
-					<p><input type="checkbox" name="availability_field" value="Saturday"> <label>Saturday</label></p>
+			<fieldset>
+			<legend>My Availability</legend>
+			<div><p><label>Days Available:</label></p>
+				<p><input type="checkbox" id="sun"name="availability_field" value="Sunday" > <label for="sun">Sunday</label></p>					
+				<p><input type="checkbox" id="mon"name="availability_field" value="Monday"> <label for="mon">Monday</label></p>
+				<p><input type="checkbox"id="tues" name="availability_field" value="Tuesday"> <label for="tues">Tuesday</label></p>
+				<p><input type="checkbox"id="wed" name="availability_field" value="Wednesday"> <label for="wed">Wednesday</label></p>
+				<p><input type="checkbox"id="thurs" name="availability_field" value="Thursday"> <label for="thurs">Thursday</label></p>
+				<p><input type="checkbox" id="fri"name="availability_field" value="Friday"> <label for="fri">Friday</label></p>
+				<p><input type="checkbox" id="sat"name="availability_field" value="Saturday"> <label for="sat">Saturday</label></p>
 					
-					<p><label>Any Comments?</label></p>
-				<textarea name="comments_field" rows="6" cols="50"> </textarea>
-				</fieldset>
+  			</div>
+					
+			<p><label>Any Comments?</label></p>
+			<textarea name="comments_field" rows="6" cols="50"> </textarea>
+			</fieldset>
 				
-				<input type="submit" value="Send Me">
-				<input type="hidden" name="This HTML Form was created by rsincere" value="rsincere">
-			</form>
-			
+			<input type="submit" value="Send Me">
+			<input type="hidden" name="This HTML Form was created by rsincere" value="rsincere">
+		</form>
 	</body>
 </html>
